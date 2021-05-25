@@ -12,11 +12,19 @@ import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import PersonList from './components/PersonList';
 import NameList from './components/NameList';
-// import { Greet } from './components/Greet'
+import StyleSheet from './components/StyleSheet';
+import InlineStyles from './components/InlineStyles';
+import './appStyles.css'
+import styles from './appStyles.module.css'
+
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <h1 className='error'>Error from App.js</h1>
+      <h1 className={styles.success}>Success from App.js</h1>
+      {/* <InlineStyles /> */}
+      {/* <StyleSheet primary={true}/> */}
+      {/* <NameList /> */}
       {/* <PersonList /> */}
       {/* <ConditionalRendering /> */}
       {/* <ParentComponent /> */}

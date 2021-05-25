@@ -1,0 +1,5 @@
+/* CSS Modules */
+/* advantage is CSS modules are locally scoped */
+.success{
+    color:green
+}
