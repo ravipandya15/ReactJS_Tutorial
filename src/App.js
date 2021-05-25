@@ -10,11 +10,15 @@ import ClassClick from './components/ClassClick'
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
+import PersonList from './components/PersonList';
+import NameList from './components/NameList';
 // import { Greet } from './components/Greet'
 function App() {
   return (
     <div className="App">
-      <ConditionalRendering />
+      <NameList />
+      {/* <PersonList /> */}
+      {/* <ConditionalRendering /> */}
       {/* <ParentComponent /> */}
       {/* <EventBind /> */}
       {/* <FunctionClick /> */}
