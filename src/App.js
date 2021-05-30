@@ -20,10 +20,12 @@ import Forms from './components/Forms';
 import LifecycleA from './components/LifecycleA';
 import Fragement from './components/Fragement';
 import Table from './components/Table';
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
     <div className="App">
+      <ParentComp />
       {/* <Fragement /> */}
       {/* <Table /> */}
       {/* <LifecycleA /> */}

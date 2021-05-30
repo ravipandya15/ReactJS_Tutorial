@@ -20,6 +20,7 @@ class ParentComp extends Component {
     }
     
     render() {
+        console.log('********Parent Component Render**********')
         return (
             <div>
                 <h1>Parent Component</h1>

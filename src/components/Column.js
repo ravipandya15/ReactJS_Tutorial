@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Column() {
-    const items = []
+    // const items = []
     return (
         // in fragement we can pass key as and attribute
         // <React.Fragment key={}></React.Fragment>
