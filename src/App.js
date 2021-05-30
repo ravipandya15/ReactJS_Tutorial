@@ -18,11 +18,15 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Forms from './components/Forms';
 import LifecycleA from './components/LifecycleA';
+import Fragement from './components/Fragement';
+import Table from './components/Table';
 
 function App() {
   return (
     <div className="App">
-      <LifecycleA />
+      <Fragement />
+      <Table />
+      {/* <LifecycleA /> */}
       {/* <Forms /> */}
       {/* <h1 className='error'>Error from App.js</h1> */}
       {/* <h1 className={styles.success}>Success from App.js</h1> */}
