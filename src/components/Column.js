@@ -15,10 +15,10 @@ function Column() {
         //         ))
         //     }
         // </React.Fragment>
-        <>
+        <React.Fragment>
             <td>Name</td>
             <td>Ravi Pandya!</td>
-        </>
+        </React.Fragment>
     )
 }
 
