@@ -24,8 +24,8 @@ import Table from './components/Table';
 function App() {
   return (
     <div className="App">
-      <Fragement />
-      <Table />
+      {/* <Fragement /> */}
+      {/* <Table /> */}
       {/* <LifecycleA /> */}
       {/* <Forms /> */}
       {/* <h1 className='error'>Error from App.js</h1> */}
