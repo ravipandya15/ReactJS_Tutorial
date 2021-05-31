@@ -22,11 +22,13 @@ import Fragement from './components/Fragement';
 import Table from './components/Table';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import ParentFocus from './components/ParentFocus';
 
 function App() {
   return (
     <div className="App">
-      <RefsDemo />
+      <ParentFocus />
+      {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
       {/* <Fragement /> */}
       {/* <Table /> */}
