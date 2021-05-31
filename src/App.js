@@ -21,11 +21,13 @@ import LifecycleA from './components/LifecycleA';
 import Fragement from './components/Fragement';
 import Table from './components/Table';
 import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
     <div className="App">
-      <ParentComp />
+      <RefsDemo />
+      {/* <ParentComp /> */}
       {/* <Fragement /> */}
       {/* <Table /> */}
       {/* <LifecycleA /> */}
