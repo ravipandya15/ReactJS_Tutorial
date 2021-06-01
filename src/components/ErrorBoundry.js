@@ -8,6 +8,8 @@ class ErrorBoundry extends Component {
              hasError : false
         }
     }
+
+    // can not log error of handler using ErrorBoundry.
     
 
     static getDerivedStateFromError(error){
