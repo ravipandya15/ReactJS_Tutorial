@@ -36,11 +36,13 @@ import Counter_Render_Props from './components/Counter_Render_Props';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/UserContext';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
   return (
     <div className="App">
-      <PostList />
+      <PostForm />
+      {/* <PostList /> */}
       {/* default value */}
       {/* <UserProvider value="Ravi Pandya!"> */}
         {/* <ComponentC /> */}
