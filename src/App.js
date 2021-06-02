@@ -35,17 +35,19 @@ import User from './components/User';
 import Counter_Render_Props from './components/Counter_Render_Props';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/UserContext';
+import PostList from './components/PostList';
 
 function App() {
   return (
     <div className="App">
+      <PostList />
       {/* default value */}
       {/* <UserProvider value="Ravi Pandya!"> */}
-        <ComponentC />
+        {/* <ComponentC /> */}
       {/* </UserProvider> */}
-      <UserProvider value="Ravi Pandya!">
+      {/* <UserProvider value="Ravi Pandya!">
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
        {/* <Counter_Render_Props>
         {(count, countHandler) => (
         <ClickCounterTwo count={count} countHandler={countHandler}/>
