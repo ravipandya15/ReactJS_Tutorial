@@ -33,11 +33,16 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverComponentTwo from './components/HoverComponentTwo';
 import User from './components/User';
 import Counter_Render_Props from './components/Counter_Render_Props';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
 
 function App() {
   return (
     <div className="App">
-       <Counter_Render_Props>
+      <UserProvider value="Ravi Pandya!">
+        <ComponentC />
+      </UserProvider>
+       {/* <Counter_Render_Props>
         {(count, countHandler) => (
         <ClickCounterTwo count={count} countHandler={countHandler}/>
         )}
@@ -47,7 +52,7 @@ function App() {
         {(count, countHandler) => (
         <HoverComponentTwo count={count} countHandler={countHandler}/>
         )}
-      </Counter_Render_Props>
+      </Counter_Render_Props> */}
       {/* <Counter_Render_Props 
         render={(count, countHandler) => (
         <ClickCounterTwo count={count} countHandler={countHandler}/>
