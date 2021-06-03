@@ -37,11 +37,13 @@ import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/UserContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
+import HookCounter from './Hooks/HookCounter';
 
 function App() {
   return (
     <div className="App">
-      <PostForm />
+      <HookCounter />
+      {/* <PostForm /> */}
       {/* <PostList /> */}
       {/* default value */}
       {/* <UserProvider value="Ravi Pandya!"> */}
