@@ -38,11 +38,13 @@ import { UserProvider } from './components/UserContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
 import HookCounter from './Hooks/HookCounter';
+import HookCounterTwo from './Hooks/HookCounterTwo';
 
 function App() {
   return (
     <div className="App">
-      <HookCounter />
+      <HookCounterTwo />
+      {/* <HookCounter /> */}
       {/* <PostForm /> */}
       {/* <PostList /> */}
       {/* default value */}
