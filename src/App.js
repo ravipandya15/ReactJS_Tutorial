@@ -40,11 +40,13 @@ import PostForm from './components/PostForm';
 import HookCounter from './Hooks/HookCounter';
 import HookCounterTwo from './Hooks/HookCounterTwo';
 import HookCounterThree from './Hooks/HookCounterThree';
+import HookCounterFour from './Hooks/HookCounterFour';
 
 function App() {
   return (
     <div className="App">
-      <HookCounterThree />
+      <HookCounterFour />
+      {/* <HookCounterThree /> */}
       {/* <HookCounterTwo /> */}
       {/* <HookCounter /> */}
       {/* <PostForm /> */}
