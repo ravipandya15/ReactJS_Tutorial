@@ -41,11 +41,13 @@ import HookCounter from './Hooks/HookCounter';
 import HookCounterTwo from './Hooks/HookCounterTwo';
 import HookCounterThree from './Hooks/HookCounterThree';
 import HookCounterFour from './Hooks/HookCounterFour';
+import EffectHookCounterOne from './Hooks/UseEffect/EffectHookCounterOne';
 
 function App() {
   return (
     <div className="App">
-      <HookCounterFour />
+      <EffectHookCounterOne />
+      {/* <HookCounterFour /> */}
       {/* <HookCounterThree /> */}
       {/* <HookCounterTwo /> */}
       {/* <HookCounter /> */}
