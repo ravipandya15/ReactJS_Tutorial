@@ -42,10 +42,12 @@ import HookCounterTwo from './Hooks/HookCounterTwo';
 import HookCounterThree from './Hooks/HookCounterThree';
 import HookCounterFour from './Hooks/HookCounterFour';
 import EffectHookCounterOne from './Hooks/UseEffect/EffectHookCounterOne';
+import ClassCounterOne from './Hooks/UseEffect/ClassCounterOne';
 
 function App() {
   return (
     <div className="App">
+      {/* <ClassCounterOne /> */}
       <EffectHookCounterOne />
       {/* <HookCounterFour /> */}
       {/* <HookCounterThree /> */}
