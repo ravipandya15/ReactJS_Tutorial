@@ -43,12 +43,16 @@ import HookCounterThree from './Hooks/HookCounterThree';
 import HookCounterFour from './Hooks/HookCounterFour';
 import EffectHookCounterOne from './Hooks/UseEffect/EffectHookCounterOne';
 import ClassCounterOne from './Hooks/UseEffect/ClassCounterOne';
+import ClassMouse from './Hooks/UseEffect/ClassMouse';
+import HookMouse from './Hooks/UseEffect/HookMouse';
 
 function App() {
   return (
     <div className="App">
+      <HookMouse />
+      {/* <ClassMouse /> */}
       {/* <ClassCounterOne /> */}
-      <EffectHookCounterOne />
+      {/* <EffectHookCounterOne /> */}
       {/* <HookCounterFour /> */}
       {/* <HookCounterThree /> */}
       {/* <HookCounterTwo /> */}
