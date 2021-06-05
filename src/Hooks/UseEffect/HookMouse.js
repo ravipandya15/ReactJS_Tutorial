@@ -16,8 +16,15 @@ function HookMouse() {
     useEffect( () => {
         console.log('useEffect called')
         window.addEventListener('mousemove', logMousePosition)
+
+        // to mimic componentWillUnmount life cycle hook in functional component 
+        // return a function from the function inside useEffect function.
+        return () => {
+            console.log('Unmouting Code')
+            window.removeEventListener('mousemove', logMousePosition)
+        }
     }, [])
-    
+
     return (
         <div>
             X - {x}  Y - {y}
