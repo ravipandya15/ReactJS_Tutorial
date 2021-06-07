@@ -54,6 +54,7 @@ import HookComponentC from './Hooks/UseEffect/HookComponentC';
 import React from 'react'
 import ReducerCounterOne from './Hooks/UseReducer/ReducerCounterOne';
 import ReducerCounterTwo from './Hooks/UseReducer/ReducerCounterTwo';
+import ReducerCounterThree from './Hooks/UseReducer/ReducerCounterThree';
 // import CounterOne from './Hooks/UseReducer/ReducerCounterOne';
 
 export const HookUserContext = React.createContext()
@@ -62,7 +63,8 @@ export const HookChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <ReducerCounterTwo />
+      <ReducerCounterThree />
+      {/* <ReducerCounterTwo /> */}
       {/* <ReducerCounterOne /> */}
       {/* <HookUserContext.Provider value={'Ravi Pandya!'}>
         <HookChannelContext.Provider value={'Codevolution'}>
