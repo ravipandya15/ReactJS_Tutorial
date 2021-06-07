@@ -3,6 +3,12 @@ import CBButton from './CBButton'
 import CBCount from './CBCount'
 import Title from './Title'
 
+// useCallback cache the provider function itselt
+// whereas usememo invokes provider function and cache it's result.
+
+// If you want to cache a function use useCallBack
+// If you want to cache result of an invoked function use useMemo
+
 function CBParentComponent() {
     const [age, setAge] = useState(25)
     const [salary, setSalary]= useState(50000)
