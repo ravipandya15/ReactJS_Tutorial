@@ -49,11 +49,13 @@ import MouseContainer from './Hooks/UseEffect/MouseContainer';
 import IntervalClassCounter from './Hooks/UseEffect/IntervalClassCounter';
 import IntervalHookCounter from './Hooks/UseEffect/IntervalHookCounter';
 import DataFetching from './Hooks/UseEffect/DataFetching';
+import DataFetchingSingle from './Hooks/DataFetchingSingle';
 
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      <DataFetchingSingle />
+      {/* <DataFetching /> */}
       {/* <IntervalHookCounter /> */}
       {/* <IntervalClassCounter /> */}
       {/* <MouseContainer /> */}
