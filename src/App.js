@@ -52,6 +52,8 @@ import DataFetching from './Hooks/UseEffect/DataFetching';
 import DataFetchingSingle from './Hooks/DataFetchingSingle';
 import HookComponentC from './Hooks/UseEffect/HookComponentC';
 import React from 'react'
+import ReducerCounterOne from './Hooks/UseReducer/ReducerCounterOne';
+// import CounterOne from './Hooks/UseReducer/ReducerCounterOne';
 
 export const HookUserContext = React.createContext()
 export const HookChannelContext = React.createContext()
@@ -59,11 +61,12 @@ export const HookChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <HookUserContext.Provider value={'Ravi Pandya!'}>
+      <ReducerCounterOne />
+      {/* <HookUserContext.Provider value={'Ravi Pandya!'}>
         <HookChannelContext.Provider value={'Codevolution'}>
           <HookComponentC />
         </HookChannelContext.Provider>
-      </HookUserContext.Provider>
+      </HookUserContext.Provider> */}
       {/* <DataFetchingSingle /> */}
       {/* <DataFetching /> */}
       {/* <IntervalHookCounter /> */}
