@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 
-// Fetching Data with useReducer and useState
+// Fetching Data with useState and useEffect
 
 function DataFetchingOne() {
     const [loading, setLoading] = useState(true)
@@ -20,11 +20,11 @@ function DataFetchingOne() {
             setError('Something went wrong')
             setPost({})
         })
-    })
+    }, [])
 
     return (
         <div>
-            Data Fetching - With useState and useEffect
+            Data Fetching With useState and useEffect
             <div>
                 {loading ? 'Loading' : post.title}
                 {error ? error : null}

@@ -60,6 +60,7 @@ import UseRCComponentC from './Hooks/UseReducer_With_useContext/UseRCComponentC'
 import CounterOne from './Hooks/UseReducer/ReducerCounterOne';
 import React, {useReducer, useContext} from 'react'
 import DataFetchingOne from './Hooks/UseReducer_With_UseEffect/DataFetchingOne';
+import DataFetchingTwo from './Hooks/UseReducer_With_UseEffect/DataFetchingTwo';
 
 export const HookUserContext = React.createContext()
 export const HookChannelContext = React.createContext()
@@ -84,7 +85,8 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <DataFetchingOne />
+      <DataFetchingTwo />
+      {/* <DataFetchingOne /> */}
       {/* Global Count : {count}
       <CounterContext.Provider value={{countState : count, countDispatch : dispatch}}>
         <UseRCComponentA />

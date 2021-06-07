@@ -17,7 +17,7 @@ const reducer = (state, action) => {
             return { ...state, secondCounter : state.secondCounter - action.value }
         case "Reset":
             return initialState
-        case "Default":
+        default:
             return state
     }
 }
