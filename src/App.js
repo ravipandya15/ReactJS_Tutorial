@@ -63,6 +63,7 @@ import DataFetchingOne from './Hooks/UseReducer_With_UseEffect/DataFetchingOne';
 import DataFetchingTwo from './Hooks/UseReducer_With_UseEffect/DataFetchingTwo';
 import CBParentComponent from './Hooks/UseCallback/CBParentComponent';
 import MemoCounter from './Hooks/UseMemo/MemoCounter';
+import FocusInput from './Hooks/UseRef/FocusInput';
 
 export const HookUserContext = React.createContext()
 export const HookChannelContext = React.createContext()
@@ -87,7 +88,8 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <MemoCounter />
+      <FocusInput />
+      {/* <MemoCounter /> */}
       {/* <CBParentComponent /> */}
       {/* <DataFetchingTwo /> */}
       {/* <DataFetchingOne /> */}
