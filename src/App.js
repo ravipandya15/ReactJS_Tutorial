@@ -50,11 +50,21 @@ import IntervalClassCounter from './Hooks/UseEffect/IntervalClassCounter';
 import IntervalHookCounter from './Hooks/UseEffect/IntervalHookCounter';
 import DataFetching from './Hooks/UseEffect/DataFetching';
 import DataFetchingSingle from './Hooks/DataFetchingSingle';
+import HookComponentC from './Hooks/UseEffect/HookComponentC';
+import React from 'react'
+
+export const HookUserContext = React.createContext()
+export const HookChannelContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <DataFetchingSingle />
+      <HookUserContext.Provider value={'Ravi Pandya!'}>
+        <HookChannelContext.Provider value={'Codevolution'}>
+          <HookComponentC />
+        </HookChannelContext.Provider>
+      </HookUserContext.Provider>
+      {/* <DataFetchingSingle /> */}
       {/* <DataFetching /> */}
       {/* <IntervalHookCounter /> */}
       {/* <IntervalClassCounter /> */}
