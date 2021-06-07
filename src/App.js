@@ -51,19 +51,45 @@ import IntervalHookCounter from './Hooks/UseEffect/IntervalHookCounter';
 import DataFetching from './Hooks/UseEffect/DataFetching';
 import DataFetchingSingle from './Hooks/DataFetchingSingle';
 import HookComponentC from './Hooks/UseEffect/HookComponentC';
-import React from 'react'
 import ReducerCounterOne from './Hooks/UseReducer/ReducerCounterOne';
 import ReducerCounterTwo from './Hooks/UseReducer/ReducerCounterTwo';
 import ReducerCounterThree from './Hooks/UseReducer/ReducerCounterThree';
-// import CounterOne from './Hooks/UseReducer/ReducerCounterOne';
+import UseRCComponentA from './Hooks/UseReducer_With_useContext/UseRCComponentA';
+import UseRCComponentB from './Hooks/UseReducer_With_useContext/UseRCComponentB';
+import UseRCComponentC from './Hooks/UseReducer_With_useContext/UseRCComponentC';
+import CounterOne from './Hooks/UseReducer/ReducerCounterOne';
+import React, {useReducer, useContext} from 'react'
 
 export const HookUserContext = React.createContext()
 export const HookChannelContext = React.createContext()
 
+export const CounterContext = React.createContext()
+
+const initialState = 0
+const reducer = (state, action) => {
+    switch(action){
+        case "Increment":
+            return state + 1
+        case "Decrement":
+            return state - 1
+        case "Reset":
+            return initialState
+        case "Default":
+            return state
+    }
+}
+
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <ReducerCounterThree />
+      Global Count : {count}
+      <CounterContext.Provider value={{countState : count, countDispatch : dispatch}}>
+        <UseRCComponentA />
+        <UseRCComponentB />
+        <UseRCComponentC />
+      </CounterContext.Provider>
+      {/* <ReducerCounterThree /> */}
       {/* <ReducerCounterTwo /> */}
       {/* <ReducerCounterOne /> */}
       {/* <HookUserContext.Provider value={'Ravi Pandya!'}>
