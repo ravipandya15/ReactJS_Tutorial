@@ -5,6 +5,7 @@ import {HookUserContext, HookChannelContext} from '../../App'
 // context API used to pass props directly from one parent to 
 // it's nested child component without passing middle components
 function HookComponentF() {
+    // it is called render props pattern
     return (
         <div>
             <HookUserContext.Consumer>
