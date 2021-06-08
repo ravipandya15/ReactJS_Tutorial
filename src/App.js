@@ -68,6 +68,8 @@ import ClassTimer from './Hooks/UseRef/ClassTimer';
 import HookTimer from './Hooks/UseRef/HookTimer';
 import DocTitleOne from './Hooks/CustomHook/DocTitleOne';
 import DocTitleTwo from './Hooks/CustomHook/DocTitleTwo';
+import CHCounterOne from './Hooks/CustomHook/CHCounterOne';
+import CHCounterTwo from './Hooks/CustomHook/CHCounterTwo';
 
 export const HookUserContext = React.createContext()
 export const HookChannelContext = React.createContext()
@@ -92,8 +94,10 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <DocTitleOne />
-      <DocTitleTwo />
+      <CHCounterOne />
+      <CHCounterTwo />
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
       {/* <HookTimer />
       <ClassTimer /> */}
       {/* <FocusInput /> */}
