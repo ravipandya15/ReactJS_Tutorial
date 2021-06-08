@@ -66,6 +66,8 @@ import MemoCounter from './Hooks/UseMemo/MemoCounter';
 import FocusInput from './Hooks/UseRef/FocusInput';
 import ClassTimer from './Hooks/UseRef/ClassTimer';
 import HookTimer from './Hooks/UseRef/HookTimer';
+import DocTitleOne from './Hooks/CustomHook/DocTitleOne';
+import DocTitleTwo from './Hooks/CustomHook/DocTitleTwo';
 
 export const HookUserContext = React.createContext()
 export const HookChannelContext = React.createContext()
@@ -90,8 +92,10 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <HookTimer />
-      <ClassTimer />
+      <DocTitleOne />
+      <DocTitleTwo />
+      {/* <HookTimer />
+      <ClassTimer /> */}
       {/* <FocusInput /> */}
       {/* <MemoCounter /> */}
       {/* <CBParentComponent /> */}
