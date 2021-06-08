@@ -70,6 +70,7 @@ import DocTitleOne from './Hooks/CustomHook/DocTitleOne';
 import DocTitleTwo from './Hooks/CustomHook/DocTitleTwo';
 import CHCounterOne from './Hooks/CustomHook/CHCounterOne';
 import CHCounterTwo from './Hooks/CustomHook/CHCounterTwo';
+import CHUserForm from './Hooks/CustomHook/CHUserForm';
 
 export const HookUserContext = React.createContext()
 export const HookChannelContext = React.createContext()
@@ -94,8 +95,9 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <CHCounterOne />
-      <CHCounterTwo />
+      <CHUserForm />
+      {/* <CHCounterOne />
+      <CHCounterTwo /> */}
       {/* <DocTitleOne />
       <DocTitleTwo /> */}
       {/* <HookTimer />
